@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+ <!-- Employee class -->
+    <bean class="com.demo.Employee" id="rohit" ><!-- Employee rohit=new Employee() -->
+
+        <property name="empid" value="123"></property> 
+        <property name="empname" value="sathya"></property> 
+        <property name="empsal" value="29000"></property> 
+        <property name="empadd" value="hyd"></property> 
+
+        <constructor-arg value="120"></constructor-arg>
+        <constructor-arg value="rohit"></constructor-arg>
+        <constructor-arg value="38330"></constructor-arg>
+        <constructor-arg value="kollur"></constructor-arg>
+
+<!-- Customer class -->
+    </bean>
+    <bean class="com.demo.Customer" id="mubeen" ><!-- Customer mubeen=new Customer() -->
+
+        <property name="cusid" value="123"></property> 
+        <property name="cusname" value="mubeen"></property> 
+        <property name="cusprice" value="89000"></property> 
+        <property name="cusadd" value="khammam"></property> 
+
+        <constructor-arg value="120"></constructor-arg>
+        <constructor-arg value="rohit"></constructor-arg>
+        <constructor-arg value="38330"></constructor-arg>
+        <constructor-arg value="kollur"></constructor-arg>
+
+    </bean>
+    
+  
+  <!-- Student class -->
+    <bean class="com.demo.Student" id="safwan">
+        <property name="stid" value="3"></property>
+        <property name="stname" value="safwan"></property>
+        <property name="stmarks" value="89"></property>
+        <property name="staddress" value="kurnool"></property>
+        <property name="subjects">
+            <list>
+                <value>Maths</value>
+                <value>Teleugu</value>
+                <value>hindi</value>
+                <value>english</value>
+                <value>science</value>
+                <value>social</value>
+            </list>
+        </property>
+    </bean>
+    
+</beans>
